@@ -1,0 +1,45 @@
+<style>
+
+    #x2{
+        background-color: green;
+        margin-top: 40px;
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 2px;
+        color: white;
+        height: 40px;
+        width: 210px;
+        display: none;
+    }
+
+    .x1{
+        width: 80px;
+        height:80px;
+    }
+
+  
+
+   
+</style>
+
+<h2 id="x2">Chame me aqui</h2>
+
+<div class="zap" onclick="zap()">
+    <img src="https://seeklogo.com/images/W/whatsapp-icon-logo-6E793ACECD-seeklogo.com.png" alt="" class="x1">
+</div>
+
+<script>
+    var  visibilidade = false;
+
+    function zap(){
+
+        if(visibilidade){
+            document.getElementById("x2").style="display:none;";
+            visibilidade = false;        
+        } else{
+            document.getElementById("x2").style="display:block;";
+            visibilidade = true;
+        }
+        
+    }
+</script>

@@ -1,0 +1,49 @@
+<h1>Calculadora Simples</h1>
+
+<div class="geral_cal">
+    <div id="res">resultado</div>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button id="botao" onclick="somar()">mais</button>
+    <button id="botao" onclick="menos()">menos</button>
+    <button id="botao" onclick="dividir()">dividir</button>
+    <button id="botao" onclick="multiplo()">multiplo</button>
+</div>
+
+    <script>
+        function somar(){
+        var n1 = document.getElementById("num1").value;
+        var n2 = document.getElementById("num2").value;
+
+        var resultado  = parseInt(n1)+parseInt(n2);
+
+        document.getElementById("res").innerHTML="resultado e " + resultado;
+        }
+
+        function menos(){
+        var n1 = document.getElementById("num1").value;
+        var n2 = document.getElementById("num2").value;
+
+        var resultado  = parseInt(n1)-parseInt(n2);
+
+        document.getElementById("res").innerHTML="resultado e " + resultado;
+        }
+        
+        function dividir(){
+        var n1 = document.getElementById("num1").value;
+        var n2 = document.getElementById("num2").value;
+
+        var resultado  = parseInt(n1)/parseInt(n2);
+
+        document.getElementById("res").innerHTML="resultado e " + resultado;
+        }
+
+        function multiplo(){
+        var n1 = document.getElementById("num1").value;
+        var n2 = document.getElementById("num2").value;
+
+        var resultado  = parseInt(n1)*parseInt(n2);
+
+        document.getElementById("res").innerHTML="resultado e " + resultado;
+        }
+    </script>
